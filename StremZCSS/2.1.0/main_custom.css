@@ -14,7 +14,11 @@
 }
 
 #mainLogo {
-    display: none !important 
+    margin-top: 50px;
+    margin-bottom: -40px;
+    height: 225px;
+    content: url(https://i.imgur.com/K55kH1d.png)
+
 }
 
 .menuItem:active {
