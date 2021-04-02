@@ -13,14 +13,6 @@
     cursor: pointer;
 }
 
-#mainLogo {
-    margin-top: 50px !important ;
-    margin-bottom: -40px !important ;
-    height: 225px !important ;
-    content: url(https://i.imgur.com/K55kH1d.png) !important 
-
-}
-
 .menuItem:active {
     background-color: #ff0000 !important;
 }
