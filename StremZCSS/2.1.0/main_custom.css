@@ -14,10 +14,10 @@
 }
 
 #mainLogo {
-    margin-top: 50px;
-    margin-bottom: -40px;
-    height: 225px;
-    content: url(https://i.imgur.com/K55kH1d.png)
+    margin-top: 50px !important ;
+    margin-bottom: -40px !important ;
+    height: 225px !important ;
+    content: url(https://i.imgur.com/K55kH1d.png) !important 
 
 }
 
