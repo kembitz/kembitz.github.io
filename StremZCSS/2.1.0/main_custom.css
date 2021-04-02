@@ -12,6 +12,11 @@
     pointer-events: all;
     cursor: pointer;
 }
+
+#mainLogo {
+    display: none !important 
+}
+
 .menuItem:active {
     background-color: #ff0000 !important;
 }
