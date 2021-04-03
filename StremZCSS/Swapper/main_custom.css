@@ -1199,11 +1199,6 @@ input:checked+.slider2 {
 	text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000,-2px -2px 0 #000000,2px -2px 0 #000000,-2px 2px 0 #000000,2px 2px 0 #000000
 }
 
-#mapInfo:before {
-	content: 'CSS by Kembitz';
-	margin-right: 40px
-}
-
 #tlInfHold {
 	left: -39px;
 	float: right 
