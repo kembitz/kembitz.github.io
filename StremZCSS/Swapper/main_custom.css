@@ -2169,3 +2169,11 @@ a.menuLink:hover {
     border: 3px solid #55555580 !important;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
+
+#hudClassImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    content: url(https://media.discordapp.net/attachments/659202581146501130/814763263727894548/4zjpij.jpg);
+    image-rendering: none !important;
+}
