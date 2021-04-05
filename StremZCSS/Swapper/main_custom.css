@@ -13,6 +13,16 @@
     cursor: pointer;
 }
 
+
+#menuClassNameTag {
+    margin-bottom: 300px;
+    position: absolute;
+    text-shadow: none;
+    color: #fff;
+    z-index: 100;
+    font-size: 19px
+}
+
 .menuItem:active {
     background-color: #ff0000 !important;
 }
