@@ -1,0 +1,885 @@
+@font-face {
+    font-family: gamefont; 
+    src: url(https://fonts.gstatic.com/s/acme/v11/RrQfboBx-C5_XxrBbg.woff2)
+}
+
+
+:root {
+    --dblue: #22bcff;
+    --dblue-tran: #7ad7ffd9;
+    --dblue-tran-box: #007aafc4;
+    --dark-blue: #1727c8;
+    --ice-blue: #4ffcff;
+    --ice-blue-trans: #6cf4ff7a;
+    --grey: #333;
+    --dark-grey: #1f1f1f
+}
+
+* {
+    text-shadow: none !important
+}
+
+#ot-sdk-btn-floating {
+    display: none 
+}
+
+#steamDB, #iosDB, #androidDB {
+    display: none !important 
+}
+
+a {
+    color: var(--dark-blue)
+}
+
+.blueLink {
+    color: var(--dark-blue) !important
+}
+
+.blueLink:active {
+    color: var(--dark-blue)
+}
+
+.blueLink:visited {
+    color: var(--dark-blue)
+}
+
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px
+}
+
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    margin: 6px;
+    border: 6px solid var(--ice-blue);
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(.5,0,.5,1) infinite;
+    border-color: var(--ice-blue) transparent transparent transparent
+}
+
+
+/* FEED PAGE */
+
+#postEntryC {
+    background-color: var(--dblue-tran);
+    box-shadow: none;
+    -webkit-box-shadow: 0 7px 0 0 var(--dblue-tran-box);
+    -moz-box-shadow: 0 7px 0 0 var(--dblue-tran-box);
+    box-shadow: 0 7px 0 0 var(--dblue-tran-box);
+
+}
+
+#chatBoxInput {
+    background-color: var(--dblue-tran);
+    border-radius: 22px;
+}
+
+#postInput {
+    color: white;
+    border: solid 3px var(--dblue-tran-box);
+    border-radius: 60px
+
+}
+
+#postButton {
+    background-color: transparent;
+    color: var(--dark-blue);
+    font-size: 20px
+}
+
+#givaButton {
+    background-color: transparent !important ;
+}
+
+#givaButton .material-icons {
+    color: var(--dark-blue) !important
+}
+
+#chatScroller {
+    background-color: transparent
+}
+
+.postCFoll {
+    color: white !important 
+}
+
+#postCFole, #postCFoli {
+    color: var(--dark-blue) !important 
+}
+
+
+#rightFollBox {
+    background-color: var(--dblue-tran);
+    border-radius: 20px;
+    border: solid white 4px
+}
+
+#rightABox {
+    display: none !important 
+}
+
+#leftYTBox {
+    display: none 
+}
+
+#leftABox {
+    background-color: var(--dblue-tran);
+    border-radius: 20px;
+    border: solid white 4px
+}
+
+#navTitle {
+    visibility: hidden 
+}
+
+#navTitle:after {
+    content: 'Klasifyy';
+    visibility: visible;
+    padding-right: 200px;
+    color: var(--dblue);
+    font-size: 50px
+}
+
+#navBar {
+    background-color: transparent 
+}
+
+#profileLogin {
+    background-color: var(--dark-blue);
+    box-shadow: none;
+    border-radius: 20px;
+    border: solid white 2px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+
+}
+
+#profileLogin:hover {
+    transform: none;
+    background-image: url(https://i.pinimg.com/originals/ac/25/4e/ac254e3b47185dfc8accba22f06bbc38.gif);
+    background-size: cover;
+    border: solid var(--dblue) 2px;
+    transition: 0.3s
+}
+
+#searchPInput {
+    background-color: var(--dblue-tran);
+    color: white 
+}
+
+#searchButton {
+    background-color: var(--dblue) !important 
+}
+
+#feedTab1, #feedTab2, #feedTab0, #feedTab4, #feedTab5 {
+    background-color: #333 !important ;
+    color: var(--dblue);
+    box-shadow: none;
+    border-radius: 20px;
+    border: solid var(--dblue) 3px;
+    padding-left: 0px;
+    padding-right: 0px;
+     
+}
+
+#feedTab1:hover, #feedTab2:hover, #feedTab0:hover, #feedTab4:hover, #feedTab5:hover {
+    opacity: 1;
+    color: var(--ice-blue);
+    border: solid var(--ice-blue) 4px
+}
+
+.feedTabA {
+    opacity: 1;
+    color: #6cf4ff !important;
+    border: solid var(--ice-blue) !important;
+    
+}
+
+
+#feedTabs .material-icons {
+    display: none
+}
+
+.socPost {
+    margin-left: -15px;
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 25px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 680px;
+    text-align: left;
+    background-color: var(--dblue-tran);
+    -webkit-box-shadow: 0 7px 0 0 #d8d8d8;
+    -moz-box-shadow: 0 7px 0 0 #d8d8d8;
+    box-shadow: 0 7px 0 0 var(--dblue-tran-box);
+    border-radius: 30px;
+}
+
+.follBtnGiv {
+    background-color: transparent;
+    color: var(--dark-blue)
+}
+
+[style="overflow-x:hidden;"], [style="overflow-x:hidden;margin-top: 10px;"], .krGivFol, .postTime, .likesHolder, #likesVal936980, #comVal936980 {
+    color: white 
+}
+
+.likesHolder>.material-icons {
+    color: white !important 
+}
+
+.likesHolder * {
+    color: var(--dark-blue) !important 
+}
+
+.postSubInfo {
+    color: white 
+}
+
+[style="color:rgba(0,0,0,0.2)"] {
+    color: white !important 
+}
+
+.shareBtnHol {
+    background-color: transparent
+}
+
+[style="color:rgba(255,255,255,0.4);font-size:12px"] {
+    color: white !important
+}
+
+#singlePost {
+    background-color: var(--dblue-tran);
+    -webkit-box-shadow: 0 7px 0 0 var(--dblue-tran-box);
+    -moz-box-shadow: 0 7px 0 0 var(--dblue-tran-box);
+    box-shadow: 0 7px 0 0 var(--dblue-tran-box);
+}
+
+#replyInput {
+    border-radius: 20px;
+    border: solid 3px var(--dblue-tran-box);
+    margin-top: 2px;
+    color: white 
+}
+
+#replyBtn {
+    background-color: transparent;
+    color: var(--dark-blue);
+    font-size: 22px
+}
+
+.reqFollB {
+    background-color: transparent;
+    color: var(--dark-blue);
+    font-size: 16px
+}
+
+.reqFollB:hover {
+    background-color: transparent
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    border-radius: 10px;
+    background-color: transparent 
+}
+
+::-webkit-scrollbar {
+    width: 12px
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: var(--dblue-tran-box);
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,.6);
+    box-shadow: inset 0 0 2px rgba(0,0,0,.6)
+}
+
+
+
+
+
+
+
+
+/* CLAN WARS */ 
+
+.regionCard {
+    background-color: var(--dblue-tran);
+    border-radius: 20px;
+    box-shadow: none 
+}
+
+.regionCard img {
+    display: none 
+}
+
+[style="margin-bottom:10px;"]:after {
+    content: 'KILLS | ACTIVE | DEAD';
+    margin-left: 460px;
+
+}
+
+[style="color:rgba(0,0,0,0.3)"] {
+    color: white !important;
+}
+
+[style="color:rgba(0,0,0,0.3);"] {
+    color: white !important;
+    display: none 
+}
+
+[style="float:right"] {
+    margin-right: 40px
+}
+
+
+#clanwarsProg {
+    background-color: var(--dblue-tran);
+    box-shadow: none ;
+}
+
+#clanwarsInfo {
+    margin-top: 20px
+}
+
+#sea-pseudo {
+    border: 13px solid var(--dblue);
+}
+
+
+
+
+
+/* MARKET */
+
+.leaderBtn {
+    background-color: var(--grey) !important;
+    border-radius: 40px;
+    border: solid var(--dblue) 2px;
+}
+
+
+#marketSearchB {
+    background-color: var(--grey);
+    border: solid var(--dblue) 2px;
+    border-radius: 40px
+}
+
+
+#marketSearchB:hover {
+    background-color: var(--dblue-tran)
+}
+
+.marketCard {
+    background-color: var(--ice-blue-trans);
+    border-radius: 20px
+}
+
+.itemOwn {
+    color: white 
+}
+
+.cardActions {
+    background: var(--dblue-tran-box);
+    color: white;
+}
+
+.cardAction {
+    color: white
+}
+
+.cardAction:hover {
+    text-decoration: underline
+}
+
+.cardActionSep {
+    display: none 
+}
+
+.cardActionSepVert {
+    display: none;
+
+}
+
+
+#invSortB {
+    background-color: var(--grey);
+    border: solid var(--dblue) 2px;
+    border-radius: 40px
+}
+
+#m_stats, #m_blackm {
+    background-color: var(--grey) !important;
+    border-radius: 40px;
+    margin-top: -5px
+}
+
+#m_stats {
+    border: solid var(--ice-blue) 2px
+}
+
+#m_stats:hover {
+    background-color: var(--grey) !important;
+    opacity: .7
+}
+
+#m_blackm {
+    border: solid #b25aed 2px
+}
+
+#navTitle.glitch::after {
+    animation: none 
+}
+
+.mapListItem {
+    background-color: var(--dblue-tran);
+    border: solid black 3px;
+    border-radius: 10px
+}
+
+[style="margin-top:1px;display: block;color: rgba(0,0,0,0.2);font-size: 15px;text-align: left;"] {
+    color: white !important 
+}
+
+span.click {
+    color: var(--dark-blue) !important 
+}
+
+
+
+
+
+
+
+
+
+
+/* SETTINGS */ 
+
+#settingsPop {
+    background-color: var(--grey);
+    border-radius: 20px;
+    border: solid var(--ice-blue) 2px;
+}
+
+.settName {
+    color: white 
+}
+
+.sliderM {
+    background-color: var(--ice-blue);
+    height: 4px;
+    margin-top: 20px 
+}
+
+
+.sliderM::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 40px;
+    background: var(--ice-blue);
+}
+
+.sliderVal {
+    background-color: var(--dark-grey);
+    border-radius: 13px
+}
+
+.slider {
+    background-color: var(--dark-grey);
+    border-radius: 20px
+}
+
+.slider::before {
+     border-radius: 20px
+}
+
+input:checked+.slider {
+    background-color: var(--dblue)
+}
+
+
+
+
+
+
+/* LEADERBOARDS */
+
+.scrollItem {
+    background-color: var(--dblue-tran);
+    -webkit-box-shadow: 0 7px 0 0 var(--dblue-tran-box);
+    -moz-box-shadow: 0 7px 0 0 var(--dblue-tran-box);
+    box-shadow: 0 7px 0 0 var(--dblue-tran-box);
+    border-radius: 10px
+}
+
+a.lName {
+    color: white
+}
+
+.floatR {
+    color: var(--dark-blue)
+}
+
+.rnkIcon {
+    display: none;
+}
+
+
+.leaderNav2 {
+    background-color: transparent 
+}
+
+.leaderBtn2 {
+    background-color: var(--grey);
+    border-radius: 20px;
+    border: solid var(--dblue) 3px;
+    color: var(--dblue) !important ;
+    
+}
+
+.leaderBtn2:hover {
+    background-color: var(--grey);
+    border: solid var(--ice-blue) 3px;
+    color: var(--ice-blue) !important;
+}
+
+[style="color:rgba(0,0,0,0.6)"] {
+    color: white !important 
+}
+
+
+
+
+/* PROFILE PAGE */
+
+.scrollItemNew {
+    background-color: var(--dblue-tran);
+    -webkit-box-shadow: 0 7px 0 0 #d8d8d8;
+    -moz-box-shadow: 0 7px 0 0 #d8d8d8;
+    box-shadow: 0 7px 0 0 var(--dblue-tran);
+    border-radius: 25px
+}
+
+.profilePic {
+    border-radius: 30px
+}
+
+.profileTabs {
+    background-color: transparent;
+}
+
+.profileTabs:hover {
+    box-shadow: none 
+}
+
+.profileTab {
+    background-color: var(--dblue-tran);
+    color: black;
+    border-radius: 20px
+    
+}
+
+.profileTab:hover {
+    border: solid var(--ice-blue) 3px;
+    color: var(--ice-blue);
+    box-shadow: none;
+    border-bottom: solid var(--ice-blue) 3px
+}
+
+.pTabA {
+    box-shadow: none;
+    border: solid var(--ice-blue) 3px;
+    color: var(--ice-blue)
+}
+
+#tradeBtn, #followBtn, #giftBtn {
+    border: solid var(--dark-blue) 1px;
+    color: var(--dark-blue);
+    border-radius: 20px
+}
+
+.leftMidHolder {
+    color: white 
+}
+
+.follL {
+    color: var(--dark-blue)
+}
+
+.follCount {
+    color: white 
+}
+
+.pSt {
+    border-radius: 20px
+}
+
+.pSt strong {
+    color: var(--dark-blue)
+}
+
+.classCard {
+    border-radius: 10px
+}
+
+.xpBar {
+    background-color: var(--dblue-tran-box);
+    border-radius: 20px
+}
+
+.xpBarV {
+    color: var(--dark-blue);
+}
+
+.xpBarB {
+    background-color: var(--ice-blue);
+    border-radius: 20px
+}
+
+.classXPBar {
+    background-color: var(--dblue-tran-box);
+    border-radius: 20px
+}
+
+.clsXPBarV {
+    color: black 
+}
+
+.clsXPBarC {
+    background-color: var(--ice-blue);
+    border-radius: 20px
+}
+
+
+.mapListItem2 {
+    background-color: grey;
+    border-radius: 15px
+}
+
+
+
+
+
+
+/* POPUPS */
+
+#popupContent {
+    background-color: var(--grey)
+}
+
+i.material-icons {
+    color: var(--ice-blue) !important 
+}
+
+
+
+#loginPop {
+    background-color: var(--grey);
+    border: solid var(--ice-blue) 2px;
+    border-radius: 20px
+}
+
+.accountInput {
+    background-color: var(--dblue-tran);
+    color: white;
+    border-radius: 15px
+}
+
+.accountButton {
+    background-color: var(--dark-blue);
+    border: solid white 2px;
+    border-radius: 20px;
+
+}
+
+.accountButton:hover {
+    background-color: var(--dblue)
+}
+
+#followPop {
+    background-color: var(--grey)
+}
+
+[style="margin-top:-8px;font-size: 22px;margin-bottom:10px"] {
+    color: white 
+}
+
+
+#tradePop {
+    background-color: var(--grey);
+    border: solid var(--ice-blue) 3px;
+    border-radius: 20px
+}
+
+.tListN.inv {
+    background-color: var(--dark-grey);
+    color: var(--ice-blue);
+    border-radius: 20px
+}
+
+.tSearch {
+    background-color: var(--dark-grey);
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px
+}
+
+.tListN.trade {
+    background-color: var(--dark-grey);
+    color: var(--ice-blue);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px
+}
+
+#tMsg {
+    background-color: var(--dark-grey);
+    border: none;
+    color: white 
+}
+
+.tSubOffer {
+    background-color: var(--dark-blue)
+}
+
+.tSubOffer:hover {
+    background-color: var(--dblue);
+}
+
+
+#giftPop {
+    background-color: var(--grey);
+    border: solid var(--ice-blue) 3px;
+    border-radius: 20px
+}
+
+#giftIn {
+    background-color: var(--dark-grey);
+    border: none;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    color: white
+} 
+
+#giftMsg {
+    background-color: var(--dark-grey);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: none;
+    color: white 
+}
+
+.pGiftButton {
+    background-color: var(--dark-blue);
+    border-radius: 20px
+}
+
+.pGiftButton:hover {
+    background-color: var(--dblue);
+
+}
+
+#reportPop {
+    background-color: var(--grey);
+    border: solid var(--ice-blue) 3px;
+    border-radius: 20px
+}
+
+#reportSelect {
+    background-color: var(--dark-grey);
+    color: white;
+    border: none
+}
+
+#reportTxt {
+    background-color: var(--dark-grey);
+    border: none;
+    border-radius: 15px;
+}
+
+#itemViewPop {
+    background-color: var(--grey);
+    border: solid var(--ice-blue) 3px
+}
+
+#filterPop {
+    background-color: var(--grey);
+    border: solid var(--ice-blue) 3px;
+    border-radius: 20px
+}
+
+[style="color:#292929"] {
+    color: black !important 
+}
+
+#marketFiltTxt {
+    background-color: var(--dark-grey);
+    border: none;
+    color: white;
+    border-radius: 20px
+}
+
+#sortFilt, #seaFilt {
+    background-color: var(--dark-grey);
+    border: none;
+    color: white
+}
+
+.filterNav, #filterTog {
+    background-color: var(--dark-grey);
+    color: var(--dblue) !important;
+    border-radius: 20px 
+}
+
+#filterTog:hover {
+    background-color: #ffffff33
+}
+
+.sliderSml2 {
+    background-color: var(--dblue) !important 
+}
+
+.sliderSml2:before {
+    background-color: white !important 
+}
+
+
+
+
+/* CAPTCHA */
+
+
+
+[style="background-color: white; z-index: 999999; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px; border-radius: 6px; box-shadow: rgb(166, 166, 166) 0px 9px 0px 0px; width: 450px; display: flex; text-align: center; flex-direction: column; justify-content: center; align-items: center; pointer-events: all;"] {
+    background-color: var(--dblue-tran) !important;
+    box-shadow: var(--dblue-tran-box) 0px 9px 0px 0px !important;
+    backdrop-filter: blur(5px)
+}
+
+[style="font-size: 32px; text-transform: uppercase; margin-bottom: 10px;"], [style="color: rgba(0, 0, 0, 0.6); font-size: 20px; margin-bottom: 10px;"] {
+    color: white !important;
+}
+
+
+#backgroundImage {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    opacity: .6;
+    background-image: url(https://wallpapercave.com/wp/wp6080925.jpg);
+    background-repeat: no-repeat;
+}
+
