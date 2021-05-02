@@ -2178,3 +2178,8 @@ a.menuLink:hover {
     border: 3px solid #55555580 !important;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
+
+#faceItIconM {
+    display: none 
+}
+
