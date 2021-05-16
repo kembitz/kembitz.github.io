@@ -1,3 +1,20 @@
+:root {
+	--dred: #ba0000;
+	--lred: #eb5656;
+	--lred-trans: #eb565687; 
+	--grey: #454545;
+	--dgrey: #111111;
+}
+
+
+
+
+
+
+
+
+
+
 
 .menuItem {
     color: white;
@@ -13,9 +30,8 @@
     cursor: pointer;
 }
 
-
 #menuClassNameTag {
-    margin-bottom: 350px;
+    margin-bottom: 420px;
     position: absolute;
     text-shadow: none;
     color: #fff;
@@ -27,10 +43,18 @@
     background-color: #ff0000 !important;
 }
 
+#mainLogo {
+    margin-top: 50px;
+    margin-bottom: -40px;
+    height: 225px;
+    content: url('https://cdn.discordapp.com/attachments/768990281080242206/827637039968026664/logo_1.png')
+}
+
 .menuItem:hover {
     background-color: #ff0000 !important;
     border-left: none
 }
+
 
 #presetSelect {
 	background-color: #5c5c5c !important;
@@ -340,165 +364,6 @@ a:hover {
 	background-color: #151515 !important 
 }
 
-#menuWindow {
-    position: absolute;
-    left: 50%;
-    top: 53%;
-    border-radius: 6px;
-    max-height: calc(100% - 480px);
-    transform: translate(-50%,-50%);
-    z-index: 2;
-    overflow-y: auto;
-    display: inline-block;
-    text-align: left;
-    pointer-events: auto;
-    padding: 20px;
-    width: 705px;
-    font-size: 20px;
-    background-color: #222;
-    -webkit-box-shadow: 0 9px 0 0 #545454;
-    -moz-box-shadow: 0 9px 0 0 #545454;
-    box-shadow: 0 9px 0 0 #545454;
-}
-
-.settingsHeader {
-    width: 102%;
-    padding-top: 19px;
-    position: -webkit-sticky;
-    position: sticky;
-    top: -2px;
-    z-index: 999999999;
-    background-color: #222;
-    padding-left: 20px;
-    margin-left: -20px;
-    backdrop-filter: blur(10px);
-}
-
-.settingTab {
-	background-color: #151515;
-	color: #999999
-}
-
-.settingTab:hover { 
-    border-bottom: solid 5px #eb565663;
-}
-
-
-#settSearch {
-    width: 100%;
-    text-align: left;
-    font-size: 16px;
-    box-sizing: border-box;
-    border: none;
-    background-color: #4e4e4e;
-    border-radius: 4px;
-    padding: 6px 10px 5px;
-}
-
-.sliderVal {
-    float: right;
-    display: inline-block;
-    position: relative;
-    width: 50px;
-    color: #f00;
-    line-height: 24px;
-    font-size: 18px;
-    text-align: center;
-    background: #373737;
-    padding: 5px 10px;
-    margin-left: 8px;
-    margin-right: -10px;
-    border-radius: 6px;
-    margin-bottom: 5px !important;
-    border: solid 2px black !important 
-
-}
-
-.settingsBtn {
-    color: red;
-    text-align: center;
-    display: inline-block;
-    width: 75px;
-    cursor: pointer;
-    background-color: #151515;
-    font-size: 17px;
-    padding: 4px 8px;
-    margin-left: 8px;
-    float: right;
-    border-radius: 4px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap
-}
-
-.settingsBtn:hover {
-	color: red; 
-	background-color: #3e3e3e
-}
-
-input:checked+.slider {
-    background-color: #ff0000;
-}
-
-input[type=color] {
-    -webkit-appearance: none;
-    border: 4px solid black;
-    padding: 0;
-    width: 55px;
-    height: 24px;
-    border-radius: 5px
-}
-
-
-.sliderM {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 100%;
-    height: 15px;
-    background-color: #373737;
-    outline: none;
-    border-radius: 4px
-}
-
-.sliderM::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 15px;
-    height: 25px;
-    border-radius: 4px;
-    background: #ff0000;
-    cursor: pointer;
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: #000;
-    -webkit-transition: .4s;
-    transition: .4s;
-    border-radius: 4px
-}
-
-div.slidecontainer {
-	margin-top: 10px;
-}
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #373737;
-    -webkit-transition: .4s;
-    transition: .4s;
-    border-radius: 6px;
-}
 
 .loadoutBtn {
     color: #fff;
@@ -688,20 +553,7 @@ input:checked+.slider2 {
 }
 
 .quickJoin {
-    border-radius: 3px;
-    background-color: #eb5656;
-    font-size: 13px;
-    padding: 4px;
-    cursor: pointer;
-    pointer-events: all;
-    z-index: 99999;
-    display: inline-block;
-    margin-left: 10px;
-    color: #000;
-    margin-bottom: 5px;
-    vertical-align: middle;
-    text-shadow: none;
-    transition: all .02s
+    background-color: transparent 
 }
 
 #serverSearch {
@@ -842,6 +694,7 @@ input:checked+.slider2 {
 	margin-right: -250px;
 	margin-left: 25px;
 	max-height: 400px !important;
+	border-radius: 0px
 }
 
 #loadoutSelect {
@@ -1905,7 +1758,7 @@ a.menuLink:hover {
     top: 70px !important;
     height: 240px !important;
     border-radius: 0px !important;
-    border-bottom: solid 3px #d4d4d4;
+
     border-top: solid 4px #d4d4d4 
 }
 
@@ -2156,7 +2009,7 @@ a.menuLink:hover {
     background-color: rgba(0, 0, 0, 0.4) !important;
     border-radius: 0px;
     border-bottom: 3px solid #7b7b7b !important;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: none
 }
 
 .kfItem {
@@ -2171,4 +2024,176 @@ a.menuLink:hover {
     border-radius: 4px;
     border: 3px solid #55555580 !important;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+#menuWindow.dark {
+    background-color: #222;
+    -webkit-box-shadow: 0px 0px 22px 5px rgba(255,0,0,0.4); 
+    box-shadow: 0px 0px 22px 5px rgba(255,0,0,0.4);
+    animation: fadeIn .6s ease
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+#menuWindow.dark div {
+    color: var(--dred)
+}
+
+.setHed {
+    border: 5px solid #ff000042;
+    background-color: var(--dgrey)
+}
+
+.plusOrMinus {
+	color: var(--dred) !important 
+}
+
+.setBodH {
+	background-color: var(--dgrey)
+}
+
+.slider {
+	background-color: var(--grey);
+	height: 35px
+}
+
+input:checked+.slider {
+	background-color: red 
+}
+
+span.slider::before {
+	background-color: black;
+	height: 28px 
+}
+
+.sliderM {
+	background-color: var(--grey);
+	color: 
+}
+
+.sliderM::-webkit-slider-thumb {
+    background-color: red;
+}
+
+.settingsBtn {
+	background-color: transparent
+}
+
+.settingsBtn:hover {
+    color: var(--lred) !important 
+}
+
+.settingTab:hover {
+	border-bottom: solid 2px var(--lred-trans)
+}
+
+.settingsHeader {
+	background-color: #222
+}
+
+.settingTab.tabANew:hover {
+	border-bottom: solid 2px red !important 
+}
+
+.settingTab.tabANew {
+	border-bottom: solid 2px red !important 
+}
+
+[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,0,0,0.3);padding-top:10px;padding-bottom:20px;"] {
+	background-color: transparent !important 
+}
+
+.creatorCodeBtn, .redVouchBtn {
+	background-color: transparent !important;
+}
+
+.creatorCodeBtn:hover, .redVouchBtn:hover {
+	color: var(--lred) !important;
+	background-color: transparent
+}
+
+.subPassChg:hover {
+	background-color: transparent;
+	color: var(--lred) !important 
+}
+
+.setHedS {
+	background-color: #111111;
+	border-color: #ba0000 
+}
+
+.bigMenTab:hover {
+	border-bottom: solid 2px var(--lred)
+}
+
+.bigMenTab.bigMenTabA {
+	border-bottom: solid 2px var(--dred)
+}
+
+.bigMenTab.bigMenTabA:hover {
+	border-bottom: solid 2px var(--lred)
+}
+
+.sliderVal {
+	border-color: var(--dred) !important;
+	color: red 
+}
+
+#settSearch {
+	background-color: var(--dgrey);
+	color: white 
+}
+
+.mapByTxt {
+	color: grey 
+}
+
+.bigMenTab span.material-icons {
+	color: red !important 
+}
+
+.mFeatSepar {
+	background-color: #111;
+	border-color: var(--dred)
+}
+
+.chalCard {
+	border-color: red;
+}
+
+.hostCBtn {
+	background-color: black;
+	border-color: var(--dred)
+}
+
+.hostHeader {
+	border-bottom: none 
+}
+
+#chatInputHolder {
+	background-color: transparent;
+	border: none  
+}
+
+#chatSwitch {
+	margin-left: 600px;
+	margin-bottom: -120px;
+	color: var(--lred)
+}
+
+.chatTextOutline {
+	background-color: transparent !important;
+}
+
+#faceItIconM {
+	display: none 
 }
