@@ -2197,3 +2197,32 @@ span.slider::before {
 #faceItIconM {
 	display: none 
 }
+
+.tSubCheck, .tDecCheck {
+	background-color: var(--dgrey);
+}
+
+.tSubCheck:hover, .tDecCheck:hover {
+	background-color: var(--grey) !important 
+}
+
+[style="color: rgba(0,0,0,0.7);"] {
+	color: white  !important 
+}
+
+#tHeader0, #tHeader1 {
+	background-color: black;
+	color: red !important;
+}
+
+.tTotal {
+	color: var(--lred)
+}
+
+.tItemHolder {
+	background-color: var(--dgrey); 
+}
+
+.tItemHolder * {
+	color: white !important 
+}
