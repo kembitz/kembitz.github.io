@@ -11,11 +11,6 @@
 
 
 
-
-
-
-
-
 .menuItem {
     color: white;
     flex-grow: 1;
@@ -767,6 +762,10 @@ input:checked+.slider2 {
 
 #ingameFPS {
 	color: grey !important 
+}
+
+.skinCard {
+	background-color: #111
 }
 
 .skinCard:hover {
