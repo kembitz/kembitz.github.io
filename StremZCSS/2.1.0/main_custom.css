@@ -903,40 +903,6 @@ input:checked+.slider2 {
     animation: none 
 }
 
-#instructions:after {
-    visibility: visible;
-    content: '999 FOREVER';
-    text-align: center;
-    margin-right: 20rem;
-    color: #ff000000;
-    -webkit-background-clip: text !important;
-    background-clip: text !important;
-
-    background: linear-gradient(170deg, #ff0000, #000000);
-    background-size: 400% 400%;
-
-    -webkit-animation: Frvr 2s ease infinite;
-    -moz-animation: Frvr 2s ease infinite;
-    animation: Frvr 2s ease infinite;
-}
-
-@-webkit-keyframes Frvr {
-    0%{background-position:0% 28%}
-    50%{background-position:100% 73%}
-    100%{background-position:0% 28%}
-}
-
-@-moz-keyframes Frvr {
-    0%{background-position:0% 28%}
-    50%{background-position:100% 73%}
-    100%{background-position:0% 28%}
-}
-
-@keyframes Frvr {
-    0%{background-position:0% 28%}
-    50%{background-position:100% 73%}
-    100%{background-position:0% 28%}
-}
 
 #weapDisplay {
 	position: absolute;
