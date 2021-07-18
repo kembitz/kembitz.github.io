@@ -1,4 +1,14 @@
 /* Change the image link below to change the social background */
+/* ignore the shit code */
+
+:root {
+    --l-red: #eb5656;
+    --text: #ffffffcc;
+    --bg: rgb(144 144 144 / .27);
+    --dark-bg: #3a3a3a
+}
+
+
 
 #backgroundImage {
     z-index: -1;
@@ -25,6 +35,15 @@
     user-select: none;
 }
 
+#leftBox {
+    display: none 
+}
+
+#rightABox {
+    display: none 
+}
+
+
 #loginPop {
     pointer-events: auto;
     border-radius: 10px;
@@ -37,6 +56,10 @@
     transform: translate(-50%,-60%);
     color: #fff;
     width: 372px
+}
+
+#givaButton .material-icons {
+    color: black !important
 }
 
 #profileKR {
@@ -128,21 +151,12 @@
     background-color: transparent
 }
 
+#postHolder {
+
+}
+
 .socPost {
-    margin-left: -15px;
-    display: inline-block;
-    font-size: 20px;
-    margin-bottom: 25px;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 680px;
-    text-align: left;
-    background-color: rgb(144 144 144 / .27);
-    -webkit-box-shadow: 0 7px 0 0 #d8d8d8;
-    -moz-box-shadow: 0 7px 0 0 #d8d8d8;
-    box-shadow: none;
-    border-radius: 12px;
+    background-color: rgb(144 144 144 / .27)
 }
 
 #rightFollBox {
@@ -196,18 +210,19 @@
 }
 
 .feedTab {
-    cursor: pointer;
-    width: 156px;
-    padding: 5px;
-    margin-right: 6px;
-    margin-left: 6px;
-    margin-bottom: 10px;
-    background-color: #ff0000;
-    -webkit-box-shadow: 0 7px 0 0 #d8d8d8;
-    -moz-box-shadow: 0 7px 0 0 #d8d8d8;
+    border-radius: 6px;
+    color: red !important;
+    background-color: var(--dark-bg);
     box-shadow: none;
-    display: inline-block;
-    border-radius: 12px;
+    border: solid 2px
+}
+
+.feedTabIcon {
+    color: red 
+}
+
+.feedTab:hover > .feedTabIcon {
+    color: var(--l-red)
 }
 
 .scrollItem {
@@ -423,7 +438,8 @@
 }
 
 .feedTab:hover {
-    background-color: #eb5656;
+    color: var(--l-red) !important;
+    opacity: 1
 }
 
 #postButton:hover {
@@ -432,16 +448,6 @@
 
 #marketSearchB {
     color: #000;
-    background-color: #ff0000;
-    font-size: 19px;
-    padding: 10px;
-    margin-left: 2px;
-    vertical-align: top;
-    padding-left: 12px;
-    padding-right: 12px;
-    border-radius: 5px;
-    display: inline-block;
-    cursor: pointer
 }
 
 #marketSearchB:hover {
@@ -471,37 +477,7 @@
     padding: 5px;
     background-color: #4c4c4cc4
 }
-#m_stats {
-    color: #000 !important;
-    background-color: #000000 !important;
-    margin-right: 2px;
-    vertical-align: top;
-    padding-left: 5px;
-    padding-bottom: 2px;
-    padding-top: 5px;
-    padding-right: 5px;
-    border-radius: 5px;
-    display: inline-block;
-    cursor: pointer
-}
 
-#m_stats:hover {
-    background-color: #eb5656 !important
-}
-
-#m_blackm {
-    color: #fff !important;
-    background-color: rgb(0 0 0 / 65%) !important;
-    margin-right: 2px;
-    vertical-align: top;
-    padding-left: 5px;
-    padding-bottom: 2px;
-    padding-top: 5px;
-    padding-right: 5px;
-    border-radius: 5px;
-    display: inline-block;
-    cursor: pointer
-}
 
 .declineAll {
     float: right;
@@ -576,20 +552,21 @@
 
 #invSortB {
     color: #000;
-    background-color: #ff0000;
-    font-size: 19px;
-    padding: 10px;
-    margin-left: 3px;
-    vertical-align: top;
-    padding-left: 12px;
-    padding-right: 12px;
-    border-radius: 5px;
-    display: none;
-    cursor: pointer
+    background-color: red !important
 }
 
 #invSortB:hover {
-    background-color:  #eb5656
+    background-color:  #eb5656 !important;
+}
+
+.bigMenTab:hover {
+    border-bottom: none;
+    color: var(--l-red) 
+}
+
+.bigMenTabA {
+    color: red;
+    border-bottom: none 
 }
 
 
@@ -652,16 +629,7 @@
 }
 
 .xpBar {
-    display: inline-block;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    margin-left: 8px;
-    width: 730px;
-    height: 25px;
-    padding: 4px;
     background-color: #242424;
-    border-radius: 4px;
-    position: relative
 }
 
 .pSt strong {
@@ -954,28 +922,20 @@
 #popupContent {
     pointer-events: auto;
     border-radius: 10px;
-    background-color: #bfbfbf36;
+    background-color: var(--dark-bg);
     padding: 15px;
     text-align: left;
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%,-60%);
+    border: solid 5px var(--bg);
     color: #fff
 }
 
 #filterPop {
-    width: 390px;
-    pointer-events: auto;
-    border-radius: 10px;
-    background-color: #bfbfbf36;
-    padding: 15px;
-    text-align: left;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%,-60%);
-    color: #fff
+    background-color: var(--dark-bg);
+    border: solid 5px var(--bg)
 }
 
 #marketFiltTxt,#invSortTxt {
@@ -1395,17 +1355,7 @@ input:focus+.slider {
 
 
 #aContainer {
-    cursor: pointer;
-    pointer-events: auto;
-    padding: 10px;
-    display: inline-block!important;
-    width: 728px;
-    height: 90px;
-    max-height: 120px;
-    max-width: 810px;
-    overflow: hidden;
-    background-color: transparent !important;
-    border-radius: 6px
+    display: none !important
 }
 
 #ot-sdk-btn-floating {
@@ -1413,25 +1363,119 @@ input:focus+.slider {
 }
 
 #iosDB {
-    position: absolute;
-    bottom: 38px;
-    right: 320px;
-    width: 216px;
-    height: auto;
-    cursor: pointer;
-    display: none
+    display: none !important
 }
 
 #androidDB {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    width: 280px;
-    height: auto;
-    cursor: pointer;
-    display: none
+    display: none !important
 }
 
 #steamDB {
-    display: none 
+    display: none !important 
+}
+
+.leftTopHolder {
+    color: white !important 
+}
+
+.follL {
+    color: white 
+}
+
+.follCount {
+    color: #ffffffcc
+}
+
+.leftMidHolder {
+    color: #ffffffcc
+}
+
+[style="color:rgba(0,0,0,0.6)"] {
+    color: var(--l-red) !important
+}
+
+.scrollItemHead {
+    color: var(--l-red) !important
+}
+
+[style="font-size:40px;text-align:center;color: #353535;"] {
+    color: var(--l-red) !important
+}
+
+.regionTitle {
+    color: var(--l-red) !important
+}
+
+.bigMenTabs {
+    background-color: var(--bg);
+    width: 1400px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.bigMFeatVid, .bigMFeatHold {
+    display: none !important
+}
+
+[style="background-color: #993299!important;"] {
+    visibility: hidden;
+}
+
+[style="background-color: #993299!important;"]:after {
+    visibility: visible;
+    content: "Publish";
+    margin-left: -95px;
+    align-items: center !important;
+}
+
+.mapListCrdI {
+    background-color: var(--bg)
+}
+
+.loadMoreD {
+    background-color: var(--bg)
+}
+
+.postContent {
+    border: none;
+    backdrop-filter: brightness(80%)
+}
+
+#marketSearchB {
+    background-color: var(--l-red) !important
+}
+
+.mapListCat {
+    background-color: var(--bg);
+    background-image: none;
+    width: fit-content;
+    color: var(--l-red);
+    border-radius: 5px
+
+}
+
+
+.bigMenTab .material-icons {
+    color: white !important 
+}
+
+.bigMenTab:hover > .material-icons {
+    color: var(--l-red) !important
+}
+
+.smlInput {
+    background-color: var(--bg) !important
+}
+
+#mpCat {
+    background-color: var(--bg) 
+}
+
+.searchListBtn {
+    background-color: var(--dark-bg);
+    border: solid 2px red 
+}
+
+.searchListBtn .material-icons {
+    color: red !important 
 }
