@@ -12,43 +12,32 @@
 
 
 .menuItem {
-    color: white;
-    flex-grow: 1;
-    display: flex;
-    transition: all .1s;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background:  #222;
-    text-align: center;
-    pointer-events: all;
-    cursor: pointer;
-}
-
-#menuClassNameTag {
-    margin-bottom: 420px;
-    position: absolute;
-    text-shadow: none;
-    color: #fff;
-    z-index: 100;
-    font-size: 19px
-}
-
-.menuItem:active {
-    background-color: #ff0000 !important;
+    background-color: #222;
 }
 
 #mainLogo {
     margin-top: 50px;
     margin-bottom: -40px;
     height: 225px;
-    content: url('https://cdn.discordapp.com/attachments/768990281080242206/827637039968026664/logo_1.png')
+    display: none
+    /* content: url('https://cdn.discordapp.com/attachments/768990281080242206/827637039968026664/logo_1.png') */
 }
 
 .menuItem:hover {
-    background-color: #ff0000 !important;
-    border-left: none
+    border-left: none;
 }
+
+        .menuItemTitle {
+            transition: color 0.2s ease;
+        }
+
+        .menuItem:hover .menuItemTitle, .menuItem:hover .menBtnIcn {
+        	color: var(--lred) !important
+        }
+
+        .menuItem:hover .menBtnIcn {
+        	transform: none !important
+        }
 
 
 #presetSelect {
@@ -87,18 +76,17 @@
   }
 
 #mLevelCont {
-    position: absolute;
-    font-size: 30px;
-    line-height: 70px;
-    color: #fff;
-    text-align: left;
-    background-color: rgb(46 46 47);
-    border-bottom-right-radius: 6px;
-    padding-left: 15px;
-    padding-right: 15px;
-    height: 70px;
-    backdrop-filter: blur(5px)
+    background-color: #222;
+    padding-right: 20px
 }
+
+        #mLevelContV {
+        	color: red;
+        }
+
+        .rankClck {
+        	display: none 
+        }
 
 #subLogoButtons {
 	position: absolute;
@@ -108,45 +96,16 @@
 }
 
 #subLogoButtons>.button {
-	padding-left: 22px;
-	padding-right: 22px;
-	text-shadow: none !important;
-	color: #f00;
-	background-color: #222 !important;
-	box-shadow: none !important;
+    background-color: #222;
+    color: red;
+    border: solid 4px red !important
 }
 
-.button {
-	position: relative;
-	display: inline-block;
-	box-sizing: border-box;
-	border-radius: 4px;
-	padding: 12px 18px;
-	padding-top: 14px;
-	margin-bottom: 6px;
-	background-color: #ff0000;
-	box-shadow: inset 0 -7px 0 0 #b08531;
-	text-align: center;
-	color: #2f2f2f;
-	text-shadow: none !important; 
-	pointer-events: all;
-	cursor: pointer;
-	-webkit-transition: all .2s;
-	transition: all .2s
-}
+        #subLogoButtons .button:hover {
+        	color: var(--lred) !important;
+        	border-color: var(--lred) !important
+        }
 
-#customizeButton {
-    width: 300px;
-    text-align: center;
-    padding: 15px;
-    font-size: 23px;
-    pointer-events: all;
-    padding-bottom: 22px;
-    background-color: #222 !important;
-    color: red !important;
-    text-shadow: none !important;
-    box-shadow: none;
-}
 
 .buttonG {
     background-color: none !important;
@@ -263,6 +222,14 @@ a.floatR:hover {
     font-size: 15px;
     cursor: pointer;
     background-color: #151515
+}
+
+.menuItemTitle {
+	color: red !important
+}
+
+.menBtnIcn {
+	color: red !important
 }
 
 .xpBarB {
@@ -401,15 +368,6 @@ a:visited {
     color: #fff !important;
 }
 
-.buttonP {
-    background-color: #ff0000 !important;
-    box-shadow: none !important
-}
-
-.buttonP:hover {
-    background-color: #fff!important;
-    box-shadow: none !important
-}
 
 .headerBar div {
     color: #000
@@ -903,6 +861,13 @@ input:checked+.slider2 {
     animation: none 
 }
 
+#instructionHolder a {
+	color: red !important
+}
+
+        #instructionHolder [style="color:#6441a5!important"] {
+        	filter: grayscale(1)
+        }
 
 #weapDisplay {
 	position: absolute;
@@ -1016,6 +981,10 @@ input:checked+.slider2 {
 
 #streamContainer {
     visibility: hidden !important 
+}
+
+#tlInfHold {
+	display: none
 }
 
 .twitch:after {
@@ -1321,16 +1290,47 @@ input:checked+.slider2 {
     z-index: 2
 }
 
+#menuWindow.dark .material-icons {
+	color: red !important
+}
+
 #policeButton {
 	background-color: #222 !important; 
-	color: red !important; 
-    padding-left: 15px 
+	color: red !important;
+	padding: 4px; 
+    height: fit-content !important;
+    width: fit-content !important;
+    border: solid 4px red !important
 }
+
+        #policeButton:hover {
+        	border-color: var(--lred) !important;
+        }
 
 #policeButton img {
 	content: url(https://i.imgur.com/ovd8ur6.png) !important; 
-	height: 50px !important;
-	width: 50px;
+	height: 45px !important;
+	width: 45px;
+	margin-right: -1px;
+}
+
+.chalXPBarC {
+	background: none;
+	background-color: red 
+}
+
+#menuWindow.dark .button {
+	border: none !important;
+	background-color: transparent !important
+}
+
+.openCollection {
+	background-color: transparent !important
+}
+
+.xpBarB {
+	background: none;
+	background-color: red 
 }
 
 .polApplc {
@@ -1690,22 +1690,6 @@ a.menuLink:hover {
     border: 3px solid;
 }
 
-#policeButton {
-    height: 84px !important;
-}
-
-#policeButton img {
-    margin-left: -13px !important;
-}
-
-.button, .button.small {
-    text-shadow: none !important;
-}
-
-.button:hover {
-    box-shadow: none !important;
-}
-
 .headerBar {
     background-color: #222 !important;
     box-shadow: none;
@@ -1791,9 +1775,17 @@ a.menuLink:hover {
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
-#menuClassNameTag {
-    margin-top: -200px !important;
+#customizeButton {
+	background-color: #222;
+	color: red;
+	border: solid 4px red !important
 }
+
+        #customizeButton:hover {
+        	color: var(--lred) !important;
+        	border-color: var(--lred) !important
+        }
+
 
 #selectorContainer {
     position: sticky;
@@ -2000,6 +1992,11 @@ a.menuLink:hover {
     border: 5px solid #ff000042;
     background-color: var(--dgrey)
 }
+
+        .setHed:hover {
+        	background-color: #111;
+        	color: red !important
+        }
 
 .plusOrMinus {
 	color: var(--dred) !important 
