@@ -2219,4 +2219,10 @@ span.slider::before {
     color: #000;
 }
 
+.bigMFeatHold {
+	display: none
+}
 
+.bigMenTab .material-icons, .bigMenTab span {
+	color: var(--dred) !important
+}
