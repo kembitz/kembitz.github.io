@@ -699,7 +699,6 @@ input:checked+.slider2 {
 	border-radius: 0px;
 	color: #ff9494;
 	font-size: 16px;
-	background-color: rgba(0, 0, 0, 0.2);
 	width: 500px;
 	margin-left: inherit;
 	text-align: center;
@@ -1943,13 +1942,12 @@ a.menuLink:hover {
 	display: none !important 
 }
 
+
 .chatItem {
-    background-color: rgba(0, 0, 0, 0.4) !important;
+    background-color: transparent;
     border-radius: 0px;
     border-bottom: 3px solid #7b7b7b !important;
     box-shadow: none;
-    
-    margin-right: 10px
 }
 
 .kfItem {
@@ -2220,3 +2218,5 @@ span.slider::before {
 #healthValue {
     color: #000;
 }
+
+
