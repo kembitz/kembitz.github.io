@@ -1,7 +1,49 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+            body {
+                background-color: #222;
+            }
+            #icon {
+                left: 50%;
+                bottom: 50%;
+                position: absolute;
+                transform: translate(-50%, 50%); 
+            }
+
+            #titles {
+                color: yellow;
+                font-family: "Ubuntu Sans", sans-serif;
+                text-align: center;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            #titles a {
+                color: yellow;
+                font-family: "Ubuntu Sans", sans-serif;
+                font-size: 60px;
+                text-decoration: none;
+                font-weight: 600;
+            }
+
+            #titles a:hover {
+                color: rgb(150, 225, 255);
+                transition: color ease-in-out 0.2s;
+            }
+        </style>
+    </head>
 <body>
-<h1></h1>
-<p></p>
+    <img src="./Images/1AD.png" id="icon" alt="gradient gear" height="400" width="400">
+    <div id="titles">
+    <a href="kemclient.html">KemClient - Depreciated</a> <br>
+    <a href="MTZV.html">MTZ Videnteum - Depreciated</a> <br>
+    <a href="CSSPicker.html">CSS Projects - Depreciated</a> <br>
+    <a href="./History of the Design of Cars/main.html">History of Car Design</a> <br>
+    </div>
 </body>
 </html>
