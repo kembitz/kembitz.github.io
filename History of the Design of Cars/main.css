@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+    --header-background-color: #00000070;
+    --header-highlight: #ff4343;
+}
+
+body { 
+    background-color: black;
+}
+
+@keyframes backgroundLoad {
+    from {
+        transform: scale(0.7) rotateY(3deg) rotateZ(-2deg) translateX(-15%)
+    }
+
+    to {
+        transform: none
+    }
+}
+
+#homeButton {
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    position: relative;
+    top: -40px;
+    left: 40px;
+    transition: all ease-in-out 0.2s;
+}
+
+#homeButton:hover {
+    transform: scale(1.2);
+    color: rgb(45, 139, 247);
+}
+
+.guideAchievmentsHeader {
+    font-family: "Ubuntu Sans Mono", serif;
+    font-size: 25px;
+    font-weight: 600;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.guideAchievments {
+    font-family: "Ubuntu Sans Mono", serif;
+    font-size: 15px;
+    font-style: italic;
+    margin-bottom: 10px;
+    
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+        clip-path: polygon(70% 10%, 100% 0, 70% 0, 100% 0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0);
+        clip-path: polygon(70% 10%, 100% 0, 70% 0, 100% 0);
+    }
+}
+
+
+#mainBackground {
+    background-image: url("./Images/ferrari-458-speciale-2934066.jpg");
+    background-size: cover; 
+    background-position: left top;
+    position: fixed;
+    left: 0;
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    transform: scale(1); 
+    z-index: -100
+}
+
+#guideBox {
+    width: 500px;
+    height: max-content;
+    background-color: #22242291;
+    color: white;
+    padding: 50px 50px 20px 50px;
+    backdrop-filter: blur(10px);
+    clip-path: polygon(5% 0, 99% 6%, 91% 100%, 0% 100%);
+    animation: fadeIn 1.2s ease;
+
+}
+
+.refLink {
+    text-decoration: none;
+    color: rgb(148, 198, 255);
+    font-family: "Ubuntu Sans Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.refLink:hover {
+    color: rgb(88, 166, 255);
+}
+
+#guideClose {
+    position: absolute;
+    top: 10px;
+    left: 35px;
+    font-size: 40px;
+    cursor: pointer;
+    transition: all 0.2s ease 
+}
+
+#guideClose:hover {
+    color: #ff4343;
+    transform: scale(1.2)
+}
+
+.guideDialogue {
+    font-family: "Ubuntu Sans Mono", monospace;
+    font-weight: 400;
+    font-style: italic 
+}
+
+.refLink {
+    position: absolute;
+    margin-top: 10px;
+}
+
+#carReq {
+    font-family: "Ubuntu Sans Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 40px;
+    position: absolute;
+    color: rgb(148, 198, 255)
+}
+
+#carReq:hover {
+    color: rgb(45, 139, 247);
+}
+
+.guideTitle {
+    font-size: 40px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-44%);
+    font-family: "Bebas Neue", serif;
+    font-style: italic;
+}
+
+#carReqBox {
+    width: 90%;
+    height: 20px;
+    transform: scale(0);
+    margin-top: 80px;
+    background-color: #1111117e ;
+    position: inherit;
+    clip-path: polygon(2% 0, 100% 0, 98% 100%, 0 100%);
+    border: none;
+    padding: 10px;
+    color: white;
+    font-family: "Ubuntu Sans Mono", monospace;
+    transition: all ease-in-out 0.2s;
+
+}
+
+#carReqBox:focus {
+    outline: none;
+    box-shadow: inset 0px -2px 0px 0px var(--header-highlight);
+    transition: all ease-in-out 0.2s
+}
+
+#carReqSend {
+    background-color: transparent;
+    box-shadow: none;
+    transform: scale(0);
+    border: none;
+    bottom: 26px;
+    right: 90px;
+    position: absolute;
+    color: white;
+    transition: all ease-in-out 0.2s
+}
+
+#carReqSend:hover {
+    color: var(--header-highlight);
+}
+
+#headBanner {
+    width: 20%;
+    height: 100%;
+    transform: translateX(0%);
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background-color: transparent;
+    transition: ease-in-out 0.4s;
+}
+
+#headBanner:after {
+    content: ".";
+    width: 120%;
+    height: 100%;
+    right: 0px;
+    position: fixed;
+    /* background-color: #22222287; */
+    background-color: rgba(0, 0, 0, 0.411) ;
+    backdrop-filter: blur(10px);
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+#headBanner:hover {
+    transform: translateX(0px);
+}
+
+#headButtons {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    color: var(--header-highlight);
+    transform: translateY(-50%);
+    top: 50%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    z-index: 10;
+}
+
+.headButton {
+    font-size: 120px;
+    height: 100%;
+    display: flex;
+    text-decoration: unset;
+    align-items: center;
+    justify-content: center;
+    color: var(--header-highlight);
+    z-index: 10;
+    transition: ease 0.2s 
+}
+
+.headButton:nth-child(1) {
+    color: paleturquoise;
+    padding-left: 30px;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.headButton:nth-child(2) {
+    color: orange;
+    font-family: "DM Sans", serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.headButton:nth-child(3) {
+    color: darkolivegreen;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 700;
+    padding-right: 20px;
+    font-style: italic;
+}
+
+.headButton:nth-child(4) {
+    color: hotpink;
+    font-family: "Russo One", sans-serif;
+    padding-right: 40px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.headButton:nth-child(5) {
+    color: rgb(241, 29, 29);
+    font-family: "Audiowide", sans-serif;
+    padding-right: 60px;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.headButton:hover {
+    transform: scale(1.4)
+
+}
+.homeButton {
+    position: fixed;
+    transform: scale(0.3)
+}
+
+#bannerPointer { 
+    color: white;
+    font-weight: bolder;
+    display: none;
+    width: 800px;
+    font-size: 60px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    -webkit-text-stroke: black 2.5px;
+    font-style: italic; 
+    text-align: center;
+    font-family: "Lexan", sans-serif;
+}
+
+
+#bottomHead{
+    z-index: 1000;
+    position: fixed;
+    top: unset;
+    bottom: 0px;
+    left: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 80px;
+    font-style: italic;
+    color: white;
+    -webkit-text-stroke: 2px black;
+}
+
+

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The History of Automotive Design </title>
+    <link rel="stylesheet" href="main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        
+
+        #mainBackground {
+            background-image: url(./Images/hoyoun-lee-MU_qLdS7CO4-unsplash.jpg);
+            animation: backgroundLoad 0.2s ease
+        }
+
+        .guideTitle {
+            font-size: 40px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-38%);
+            font-family: "Bebas Neue", serif;
+            font-style: italic;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="mainBackground"></div>
+    <div id="headCorner"></div>
+    <div id="guideBox">
+        <a href="main.html" class="material-icons" id="homeButton">home</a>
+        <i class="material-icons" id="guideClose">close</i>
+        <h1 class="guideTitle">1976 Lamborghini Countach</h1>
+        <p class="guideDialogue">Daring, devilish, and dazzling, the Countach came roaring out of the bull pen and caught everyone by storm. It's outrageous styling was a far cry from the sleek curves and soft edges of the 60s. It inspired the low and daredevil styling of all supercars in the future. It reinforced a boxy and edgy era that took over the 70s and followed into the 80s. Til this day, supercars try to capture the daring lines and edges of the Countach. </p>
+        <h2 class="guideAchievmentsHeader">Achievements</h2>
+        <li class="guideAchievments">Radically different than other supercars of its day</li>
+        <li class="guideAchievments">A mainstream icon, every super star had one</li>
+        <li class="guideAchievments">Popularized the shape and wide stance of all supercars</li>
+    
+        <a href="reference.html" class="refLink">Click here to see references.</a>
+        <p id="carReq">Click here to request a car to our site.</p>
+        <input id="carReqBox"></input>
+        <button class="material-icons" id="carReqSend">send</button>
+    </div>
+    <div id="headBanner">
+        <div id="headButtons"> 
+            <a class="headButton" id="FiftiesButton" href="./50s.html">50's</a>
+            <a class="headButton" id="SixtiesButton" href="./60s.html">60's</a>
+            <a class="headButton" id="SeventiesButton" href="./70s.html">70's</a>
+            <a class="headButton" id="EightiesButton" href="./80s.html">80's</a>
+            <a class="headButton" id="NinetiesButton" href="./90s.html">90's</a>
+        </div>
+    </div>
+    
+    <div id="bannerPointer">Hover to discover the art and passion behind the world's greatest cars...</div>
+    <div id="bottomHead">Motello-Intenzione</div>
+    <script>
+        const carReq = document.getElementById("carReq");
+        const carReqBox = document.getElementById("carReqBox");
+        const carReqSend = document.getElementById("carReqSend");
+        const mainBackground = document.getElementById("mainBackground");
+        const headBanner = document.getElementById("headBanner");
+        const bannerPointer = document.getElementById("bannerPointer");
+        const bottomHead = document.getElementById("bottomHead");
+        const FiftiesButton = document.getElementById("FiftiesButton");
+        const SixtiesButton = document.getElementById("SixtiesButton");
+        const SeventiesButton = document.getElementById("SeventiesButton");
+        const EightButton = document.getElementById("EightiesButton");
+        const NinetiesButton = document.getElementById("NinetiesButton");
+        const guideBox = document.getElementById("guideBox");
+        const guideClose = document.getElementById("guideClose");
+    
+    
+    
+        headBanner.addEventListener("mouseenter", () => [
+            guideBox.style.opacity = "0",
+            guideBox.style.transition = "opacity 0.1s ease-in-out",
+        ]);
+    
+        headBanner.addEventListener("mouseleave", () => [
+            guideBox.style.opacity = "1",
+            guideBox.style.transition = "opacity 0.1s ease-in-out",
+        ]);
+    
+        guideClose.addEventListener("click", () => [
+            guideBox.style.opacity = "0",
+            guideBox.style.transition = "opacity 0.2s ease-in-out",
+        ]);
+    
+        bottomHead.addEventListener("click", () => [
+            guideBox.style.opacity = "1",
+            guideBox.style.transition = "opacity 0.2s ease-in-out",
+        ]);
+    
+        FiftiesButton.addEventListener("mouseenter", () => [
+            mainBackground.style.backgroundImage = "url(./Images/automobile-3281454.jpg)",
+            mainBackground.style.transform = "scale(0.7) rotateY(3deg) rotateZ(-2deg) translateX(-15%)",
+            mainBackground.style.transition = "ease 0.2s",
+            bottomHead.innerHTML = "1954 Mercedes Benz 300SL",
+        ]);
+    
+        FiftiesButton.addEventListener("mouseleave", () => [
+            mainBackground.style.backgroundImage = "url(./Images/hoyoun-lee-MU_qLdS7CO4-unsplash.jpg)",
+            mainBackground.style.transform = "scale(1)",
+            bottomHead.innerHTML = "Motello-Intenzione",
+        ]);
+     
+        SixtiesButton.addEventListener("mouseenter", () => [
+            mainBackground.style.backgroundImage = "url(./Images/erwan-hesry-15v2IOVoCX0-unsplash.jpg)",
+            mainBackground.style.transform = "scale(0.7) rotateY(3deg) rotateZ(-2deg) translateX(-15%)",
+            mainBackground.style.transition = "ease 0.2s",
+            bottomHead.innerHTML = "1967 Ford Mustang"
+        ]);
+    
+        SixtiesButton.addEventListener("mouseleave", () => [
+            mainBackground.style.backgroundImage = "url(./Images/hoyoun-lee-MU_qLdS7CO4-unsplash.jpg)",
+            mainBackground.style.transform = "scale(1)",
+            bottomHead.innerHTML = "Motello-Intenzione",
+        ]);
+        
+        SeventiesButton.addEventListener("mouseenter", () => [
+            mainBackground.style.backgroundImage = "url(./Images/hoyoun-lee-MU_qLdS7CO4-unsplash.jpg)",
+            mainBackground.style.transform = "scale(0.7) rotateY(3deg) rotateZ(-2deg) translateX(-15%)",
+            mainBackground.style.transition = "ease 0.2s",
+            bottomHead.innerHTML = "1976 Lamborghini Countach"
+        ]);
+    
+        SeventiesButton.addEventListener("mouseleave", () => [
+            mainBackground.style.backgroundImage = "url(./Images/hoyoun-lee-MU_qLdS7CO4-unsplash.jpg)",
+            mainBackground.style.transform = "scale(1)",
+            bottomHead.innerHTML = "Motello-Intenzione",
+        ]);
+        
+        EightiesButton.addEventListener("mouseenter", () => [
+            mainBackground.style.backgroundImage = "url(./Images/nate-dieckhaus--HKGsK10bMw-unsplash.jpg)",
+            mainBackground.style.transform = "scale(0.7) rotateY(3deg) rotateZ(-2deg) translateX(-15%)",
+            mainBackground.style.transition = "ease 0.2s",
+            bottomHead.innerHTML = "1983 Ferrari Testarossa"
+        ]);
+    
+        EightiesButton.addEventListener("mouseleave", () => [
+            mainBackground.style.backgroundImage = "url(./Images/hoyoun-lee-MU_qLdS7CO4-unsplash.jpg)",
+            mainBackground.style.transform = "scale(1)",
+            bottomHead.innerHTML = "Motello-Intenzione",
+        ]);
+        
+        NinetiesButton.addEventListener("mouseenter", () => [
+            mainBackground.style.backgroundImage = "url(./Images/courjault-thomas-rwcoWiHmLtM-unsplash.jpg)",
+            mainBackground.style.transform = "scale(0.7) rotateY(3deg) rotateZ(-2deg) translateX(-15%)",
+            mainBackground.style.transition = "ease 0.2s",
+            bottomHead.innerHTML = "1998 Chevrolet Corvette"
+        ]);
+    
+        NinetiesButton.addEventListener("mouseleave", () => [
+            mainBackground.style.backgroundImage = "url(./Images/hoyoun-lee-MU_qLdS7CO4-unsplash.jpg)",
+            mainBackground.style.transform = "scale(1)",
+            bottomHead.innerHTML = "Motello-Intenzione",
+        ]);
+           
+        carReq.addEventListener("click", () => [
+            carReqBox.style.transform = "scale(1)",
+            carReqSend.style.transform = "scale(1)",
+        ]);
+    
+    </script>
+    </body>
+    </html>
+    

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Why My Mom is the Best Mom</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div id="mainBackground"></div>
+        <div id="ILoveMyMom">I LOVE YOU MOM</div>
+            <div id="instructions">Click on the dots for messages</div>
+        <div id="dotsPreview">
+            <div id="previewText">Lorem Ipsum diverdum</div>
+            <div id="previewHeader">Lorem Ipsum</div>
+            <div id="previewClose">Close</div>
+        </div>
+        <div id="dots">
+            <div id="child">
+            </div>
+            <div id="middle">
+            </div>
+            <div id="high">
+            </div>
+            <div id="woman">
+            </div>
+            <div id="school">
+            </div>
+        </div>
+    </body>
+    <script>
+
+    const childCircle = document.getElementById('child');
+    const middleCircle = document.getElementById('middle');
+    const highCircle = document.getElementById('high');
+    const womanCircle = document.getElementById('woman');
+    const schoolCircle = document.getElementById('school');
+    const dotsPreview = document.getElementById('dotsPreview');
+    const previewText = document.getElementById('previewText');
+    const previewHeader = document.getElementById('previewHeader');
+    const previewClose = document.getElementById('previewClose');
+
+    previewClose.addEventListener('click', () => {
+        dotsPreview.style.opacity = 0;
+        previewText.innerHTML = '';
+        previewHeader.innerHTML = '';
+    })
+
+    childCircle.addEventListener('click', () => {
+        dotsPreview.style.opacity = 1;
+        previewText.innerHTML = ' You took care of every need and helped me when I was sick. Even when we struggled or I was stresed, you found a way to make it seem fun and so relaxed. Watching cartoons, going to the pool, getting me into reading, helping me with the Xbox, and most importantly great naps. There is so much more memories I have because of you. Thank you for an amazing childhood.'
+        previewHeader.innerHTML = "Thank you for an amazing childhood!"
+    })
+
+    middleCircle.addEventListener('click', () => {
+        dotsPreview.style.opacity = 1;
+        previewText.innerHTML = 'Thank you for supporting me through one of the most difficult periods in my life. You made it to where I felt comfortable exploring myself and the world. In a time where I was not sure who I was, you made me comfortable. The deep talks and mental health talks made me into the person I am today. My wisdom and confidence started with you and it is the best gift I have ever received. Thank you.'; 
+        previewHeader.innerHTML = "Middle School Years"
+    })
+
+    highCircle.addEventListener('click', () => {
+        dotsPreview.style.opacity = 1;
+        previewText.innerHTML = 'I struggled to get myself and my grades together. You gave me the work ethic to fix those. I am still not perfect with them, but thanks to you know I now know how I learn best. I started reading a lot and explored my creativity. I would not have been confidennt to start programming and other projects if it were not for you encouraging me and my skills. I feel like my skills are worth something to the world thanks to you.'
+        previewHeader.innerHTML = "High School Years"
+    })
+
+    womanCircle.addEventListener('click', () => {
+        dotsPreview.style.opacity = 1;
+        previewText.innerHTML = 'You set an example of what a great woman should be. You are strong, hardworking, supportive, and attentive. No one has loved me like you do and I appreciate that every day. If a woman did not love me like you do I would not want them. Learning this from watching you saved me a lot of toxicity and heartbreak. I am the happiest I have ever been thanks to finding Karley, and I would not have been able to spot her good qualitiies if it were not for you being a good role model.'
+        previewHeader.innerHTML = "Example of a Great Woman"
+    })
+
+    schoolCircle.addEventListener('click', () => {
+        dotsPreview.style.opacity = 1;
+        previewText.innerHTML = 'Today, I am thankful for your faith in me. I am at the most important time in my life for growth. I used to doubt myself, but you believing in me and checking up on me kept me working. Soon enough I saw I can do much on my own. Im still not the best right now, but your faith in me keeps me pushing towards a productive and successfuly life. Im improving thanks to you and you will see the results over the next few months. You let me have a good life with freedom, choices, a wonderful girlfriend, and a comforting home. It is not home without you. Thank you for every meal, keeping me at work, and believing in me.'
+        previewHeader.innerHTML = "Right Now"
+    })
+    </script>
+</html>
