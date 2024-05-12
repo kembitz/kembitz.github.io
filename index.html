@@ -4,14 +4,32 @@
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
 
+            @keyframes spin {
+                from {
+                    transform: rotate(0deg);
+                }
+
+                to {
+                    transform: rotate(360deg)
+                }
+            }
+
             body {
                 background-color: #222;
             }
             #icon {
-                left: 50%;
-                bottom: 50%;
+                left: 0px;
+                top: 0px;
+                padding: 0px;
+                margin: -90px;
                 position: absolute;
-                transform: translate(-50%, 50%); 
+                transform: scale(0.6); 
+                user-select: all;
+            }
+
+            #icon:hover {
+                animation: spin 0.5s ease-in-out;
+                opacity: 0.5;
             }
 
             #titles {
@@ -31,6 +49,24 @@
                 font-weight: 600;
             }
 
+            #topHeader {
+                position: absolute;
+                width: unset;
+                left: 0px;
+                right: 0px;
+                height: 120px;
+                background-color: black;
+            }
+
+            #topHeaderAccent {
+                position: absolute;
+                width: 310px;
+                left: 0px;
+                height: 220px;
+                background-color: black; 
+                clip-path: polygon(0 0, 100% 0, 100% 50%, 60% 100%, 0 100%);
+            }
+
             #titles a:hover {
                 color: rgb(150, 225, 255);
                 transition: color ease-in-out 0.2s;
@@ -38,7 +74,11 @@
         </style>
     </head>
 <body>
-    <img src="./Images/1AD.png" id="icon" alt="gradient gear" height="400" width="400">
+    <div id="topHeader">
+        <div id="topHeaderAccent"></div>
+    <img src="Images/1AD.png" id="icon" alt="gradient gear" height="400" width="400">
+    </div>
+
     <div id="titles">
     <a href="kemclient.html">KemClient - Depreciated</a> <br>
     <a href="MTZV.html">MTZ Videnteum - Depreciated</a> <br>
